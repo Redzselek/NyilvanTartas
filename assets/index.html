@@ -9,15 +9,32 @@
 </head>
 <body>
     
-    <form>
-        <input placeholder="Név" id="nev" class="input" type="text">
-        <input placeholder="Életkor" id="eletkor" class="input" type="number">
-        <input placeholder="Magasság" id="magassag" min="40" class="input" type="number">
-        <label for="">
-            Házas <input type="checkbox" id="hazas"> 
-        </label>
-        <button>Submit</button>
-      </form>
+    <div class="group">
+        <input required="" id="nev" class="input" type="text">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Név</label>
+    </div>
+    <div class="group">
+        <input required="" id="eletkor" class="input" type="number">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Életkor</label>
+    </div>
+    <div class="group">
+        <input required="" id="magassag" min="40" class="input" type="number">
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label>Magasság</label>
+    </div>
+    <br>
+    <div class="group">
+        Házas<input type="checkbox" id="hazas"> 
+    </div>
+    <br>
+    <button onclick="Hozzaad()">Hozzáad</button>
+    <div id="tablazat"></div>    
+
 </body>
 </html>
 
